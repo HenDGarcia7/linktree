@@ -3,10 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
     background-color: #f3f3f1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -17,32 +20,47 @@ section{
     align-items: center;
     flex-direction: column;
     min-height: 70vh;
+    border-radius: 20px;
 }
 
 section img{
+    margin-top: 100px;
     border-radius: 50%;
     width: 120px;
-    
 }
 
 h1{
     font-size: 24px;
     margin: 10px 0;
-    /* margin-bottom: 20px; */
 }
 
 .bt-01{
     margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: white;
     border-radius: 10px;
     width: 500px;
     height: 50px;
     border-color: white;
+    transition: background-color 0.3s ease;
+    font-style: inherit;
+    font-size: medium; 
+}
+
+.bt-01:hover {
+    background-color: #2980b9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figure{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
 }
 
 figure img{
     width: 48px;
     padding: 5px;
-    /* border: 1px solid red; */
     margin: 20px 10px 0 10px;
 }
